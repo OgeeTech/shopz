@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 /* ================= LINKS ================= */
 export const NAV_LINKS = [
-  { name: "About Us", href: "/" },
-  { name: "Terms & Conditions", href: "/" },
-  { name: "Privacy Policy", href: "/" },
-  { name: "Contact Us", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Terms & Conditions", href: "/terms" },
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 /* ================= ICONS ================= */
@@ -63,7 +64,6 @@ const Navbar = () => {
     ? "bg-white/90 backdrop-blur-md shadow-sm"
     : "bg-transparent";
 
-  // CHANGED: Shared style for Gray -> Pink Hover
   const hoverStyle =
     "text-gray-600 hover:text-[#ec4899] transition-colors duration-200";
 
@@ -82,16 +82,13 @@ const Navbar = () => {
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                // CHANGED: Applied gray -> pink style
+                to={link.href}
                 className={`text-sm font-medium ${hoverStyle}`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
 
             {/* AUTH BUTTONS */}
@@ -113,7 +110,6 @@ const Navbar = () => {
 
           {/* MOBILE TOGGLE */}
           <button
-            // CHANGED: Applied gray -> pink style
             className={`md:hidden ${hoverStyle}`}
             onClick={() => setMobileOpen(true)}
           >
@@ -157,14 +153,14 @@ const Navbar = () => {
 
               <div className="flex flex-col gap-6">
                 {NAV_LINKS.map((link) => (
-                  <a
+                  <Link
                     key={link.name}
-                    href={link.href}
+                    to={link.href}
                     className="text-lg font-medium text-gray-600 hover:text-[#ec4899] transition-colors"
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 ))}
 
                 <hr className="my-4 border-gray-100" />
@@ -176,12 +172,12 @@ const Navbar = () => {
                   Sign in
                 </a>
 
-                <a
+                <Link
                   href="/register"
                   className="bg-[#ec4899] text-white text-center py-3 rounded-full font-semibold hover:bg-[#db2777] transition"
                 >
                   Register
-                </a>
+                </Link>
               </div>
             </motion.div>
           </>

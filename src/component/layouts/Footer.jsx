@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /* ================= ICONS ================= */ const Twitter = (props) => (
   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -86,21 +87,20 @@ const Footer = () => {
           {/* LINKS */}
           <nav className="flex flex-col items-center md:items-start gap-3 text-sm">
             {[
-              ["About Us", "https://shopz.com/about"],
-              ["Contact Us", "https://shopz.com/contact"],
-              ["Privacy Policy", "https://shopz.com/privacy"],
-              ["Terms & Conditions", "https://shopz.com/terms"],
+              ["About Us", "/about"],
+              ["Contact Us", "/contact"],
+              ["Privacy Policy", "/privacy"],
+              ["Terms & Conditions", "/terms"],
             ].map(([label, link]) => (
-              <a
+              <Link
                 key={label}
-                href={link}
-                className="text-gray-500 hover:text-[#ec4899] transition"
+                to={link}
+                className="text-gray-500 hover:text-[#ec4899] transition font-medium"
               >
                 {label}
-              </a>
+              </Link>
             ))}
           </nav>
-
           {/* NEWSLETTER */}
           <div className="space-y-4 text-center md:text-left">
             <h4 className="text-base font-semibold text-gray-900">

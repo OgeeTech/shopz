@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 /* ================= CONFIG ================= */
 const TYPING_SPEED = 120;
@@ -141,9 +142,12 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2"
           >
             {/* Primary Button */}
-            <button className="bg-[#ec4899] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-pink-500/30 hover:bg-[#db2777] hover:scale-105 active:scale-95 transition-all w-full sm:w-auto">
+            <Link
+              to="/register"
+              className="bg-[#ec4899] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-pink-500/30 hover:bg-[#db2777] hover:scale-105 active:scale-95 transition-all w-full sm:w-auto inline-block text-center"
+            >
               Get Started Free
-            </button>
+            </Link>
 
             {/* Secondary Button */}
             <button className="border border-gray-300 bg-white text-gray-700 font-bold px-8 py-4 rounded-full hover:bg-gray-50 hover:text-[#ec4899] hover:border-[#ec4899] active:scale-95 transition-all w-full sm:w-auto">
