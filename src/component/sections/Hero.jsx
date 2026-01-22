@@ -111,9 +111,9 @@ const Hero = () => {
           <motion.h1
             variants={fadeUp}
             className="
-              font-extrabold text-gray-600 leading-[1.1]
-              text-4xl sm:text-5xl md:text-6xl lg:text-7xl
-            "
+    font-extrabold text-gray-600 leading-[1.1]
+    text-6xl sm:text-7xl md:text-8xl lg:text-9xl
+  "
           >
             Launch Your
             {/* Typewriter text */}
@@ -155,7 +155,7 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <motion.div
           variants={imageVariants}
-          className="flex justify-center md:justify-end order-2"
+          className="hidden md:flex justify-center md:justify-end order-2"
         >
           <motion.img
             src="/img/hero.png"

@@ -145,7 +145,7 @@ const Navbar = () => {
             >
               <div className="flex items-center justify-between mb-10">
                 {/* Mobile Drawer Logo */}
-                <div className="flex items-center gap-2 text-[#ec4899]">
+                <div className="flex items-center gap-2 text-gray-600">
                   <CartIcon className="w-6 h-6" />
                   <span className="text-xl font-bold">Shopz</span>
                 </div>
