@@ -68,7 +68,7 @@ const Contact = () => {
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4"
+          className="text-4xl md:text-5xl font-extrabold text-gray-600 mb-4"
         >
           Get in Touch
         </motion.h1>
@@ -159,7 +159,7 @@ const Contact = () => {
             </div>
 
             {/* Support Image */}
-            <div className="hidden lg:block relative h-64 rounded-3xl overflow-hidden shadow-lg">
+            {/* <div className="hidden lg:block relative h-64 rounded-3xl overflow-hidden shadow-lg">
               <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800"
                 alt="Support team"
@@ -170,7 +170,7 @@ const Contact = () => {
                   "Shopz support helped us scale to 10k users in a month!"
                 </p>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* --- RIGHT: FORM --- */}

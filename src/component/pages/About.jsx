@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-white pt-28 pb-16 overflow-hidden">
@@ -81,8 +81,8 @@ const About = () => {
             </p>
 
             {/* CTA Button */}
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="group flex items-center w-max gap-3 bg-gradient-to-r from-[#ec4899] to-[#db2777] py-3.5 px-8 rounded-full text-white font-semibold shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300"
             >
               <span>Get Started</span>
@@ -99,7 +99,7 @@ const About = () => {
                   fill="#fff"
                 />
               </svg>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -196,7 +196,7 @@ const Privacy = () => {
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4"
+            className="text-3xl md:text-5xl font-extrabold text-gray-600 mb-4"
           >
             Privacy Policy
           </motion.h1>
