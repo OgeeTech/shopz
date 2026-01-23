@@ -71,13 +71,16 @@ const Navbar = () => {
     <>
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all ${navBg}`}>
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          {/* LOGO (Gray -> Pink on Hover) */}
-          <a href="/" className={`flex items-center gap-2 group ${hoverStyle}`}>
+          {/* LOGO */}
+          <Link
+            to="/"
+            className={`flex items-center gap-2 group ${hoverStyle}`}
+          >
             <CartIcon className="w-7 h-7" />
             <span className="text-2xl font-extrabold tracking-tight">
               Shopz
             </span>
-          </a>
+          </Link>
 
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex items-center gap-8">
@@ -91,21 +94,17 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* AUTH BUTTONS */}
-            <a
-              href="/login"
-              // CHANGED: Applied gray -> pink style
-              className={`text-sm font-semibold ${hoverStyle}`}
-            >
+            {/* AUTH BUTTONS (Desktop) */}
+            <Link to="/login" className={`text-sm font-semibold ${hoverStyle}`}>
               Sign in
-            </a>
+            </Link>
 
-            <a
-              href="/register"
+            <Link
+              to="/register"
               className="bg-[#ec4899] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#db2777] transition"
             >
               Register
-            </a>
+            </Link>
           </div>
 
           {/* MOBILE TOGGLE */}
@@ -165,16 +164,20 @@ const Navbar = () => {
 
                 <hr className="my-4 border-gray-100" />
 
-                <a
-                  href="/login"
+                {/* FIXED: Mobile Sign In */}
+                <Link
+                  to="/login"
                   className="text-lg font-semibold text-gray-600 hover:text-[#ec4899] transition-colors"
+                  onClick={() => setMobileOpen(false)}
                 >
                   Sign in
-                </a>
+                </Link>
 
+                {/* FIXED: Mobile Register (Changed href to to) */}
                 <Link
-                  href="/register"
+                  to="/register"
                   className="bg-[#ec4899] text-white text-center py-3 rounded-full font-semibold hover:bg-[#db2777] transition"
+                  onClick={() => setMobileOpen(false)}
                 >
                   Register
                 </Link>
