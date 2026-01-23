@@ -78,7 +78,7 @@ const Navbar = () => {
           >
             <CartIcon className="w-7 h-7" />
             <span className="text-2xl font-extrabold tracking-tight">
-              Shopz
+              Traderz
             </span>
           </Link>
 
@@ -142,7 +142,7 @@ const Navbar = () => {
                 {/* Mobile Drawer Logo */}
                 <div className="flex items-center gap-2 text-gray-600">
                   <CartIcon className="w-6 h-6" />
-                  <span className="text-xl font-bold">Shopz</span>
+                  <span className="text-xl font-bold">Traderz</span>
                 </div>
 
                 <button onClick={() => setMobileOpen(false)}>

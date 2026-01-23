@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-/* ================= ICONS (Updated for Shopz) ================= */
 const Icons = {
   Design: (props) => (
     <svg
@@ -104,7 +103,7 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold text-gray-600"
         >
-          Why Choose Shopz?
+          Why Choose Traderz?
         </motion.h2>
 
         <motion.p

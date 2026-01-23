@@ -49,8 +49,8 @@ const Register = () => {
 
         <div className="relative z-10 max-w-md mb-10">
           <blockquote className="text-2xl font-semibold leading-relaxed mb-6">
-            “Shopz revolutionized how we handle online sales. We scaled from 10
-            to 10,000 orders in three months.”
+            “Traderez revolutionized how we handle online sales. We scaled from
+            10 to 10,000 orders in three months.”
           </blockquote>
 
           <div className="flex items-center gap-4">

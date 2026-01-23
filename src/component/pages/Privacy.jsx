@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 /* ================= DATA ================= */
 const SECTIONS = [
@@ -9,15 +10,15 @@ const SECTIONS = [
     content: (
       <>
         <p className="mb-4">
-          At Shopz ("we," "us," or "our"), we respect your privacy and are
+          At Traderz ("we," "us," or "our"), we respect your privacy and are
           committed to protecting your personal data. This Privacy Policy will
           inform you as to how we look after your personal data when you visit
           our website (regardless of where you visit it from) and tell you about
           your privacy rights and how the law protects you.
         </p>
         <p>
-          This policy applies to the Shopz platform, website, and any services
-          provided through them.
+          This policy applies to the Traderez platform, website, and any
+          services provided through them.
         </p>
       </>
     ),
@@ -54,7 +55,7 @@ const SECTIONS = [
     content: (
       <>
         <p className="mb-4">
-          Shopz uses the collected data for various purposes:
+          Traderez uses the collected data for various purposes:
         </p>
         <ul className="list-disc pl-5 space-y-2">
           <li>To provide and maintain the Service</li>
@@ -141,14 +142,14 @@ const SECTIONS = [
           <li>
             By email:{" "}
             <span className="font-semibold text-gray-800">
-              privacy@shopz.com
+              privacy@Traderez.com
             </span>
           </li>
           <li>
             By visiting this page on our website:{" "}
-            <a href="/contact" className="text-[#ec4899] hover:underline">
-              shopz.com/contact
-            </a>
+            <Link to="/contact" className="text-[#ec4899] hover:underline">
+              Traderez.com/contact
+            </Link>
           </li>
         </ul>
       </>
@@ -279,10 +280,10 @@ const Privacy = () => {
                 correction or deletion, please contact our DPO directly.
               </p>
               <a
-                href="mailto:dpo@shopz.com"
+                href="mailto:dpo@Traderz.com"
                 className="text-[#ec4899] font-bold hover:underline"
               >
-                dpo@shopz.com
+                dpo@Traderz.com
               </a>
             </div>
           </div>

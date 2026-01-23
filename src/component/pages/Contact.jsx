@@ -103,10 +103,10 @@ const Contact = () => {
                   Speak to our friendly team.
                 </p>
                 <a
-                  href="mailto:sales@shopz.com"
+                  href="mailto:sales@Traderz.com"
                   className="text-[#ec4899] font-semibold hover:underline"
                 >
-                  sales@shopz.com
+                  sales@Traderz.com
                 </a>
               </div>
 
@@ -119,10 +119,10 @@ const Contact = () => {
                   We're here to help.
                 </p>
                 <a
-                  href="mailto:support@shopz.com"
+                  href="mailto:support@Traderz.com"
                   className="text-[#ec4899] font-semibold hover:underline"
                 >
-                  support@shopz.com
+                  support@Traderz.com
                 </a>
               </div>
 
@@ -167,7 +167,7 @@ const Contact = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                 <p className="text-white font-medium">
-                  "Shopz support helped us scale to 10k users in a month!"
+                  "Trderz support helped us scale to 10k users in a month!"
                 </p>
               </div>
             </div> */}

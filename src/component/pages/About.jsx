@@ -65,8 +65,8 @@ const About = () => {
             <div className="w-24 h-[4px] rounded-full bg-gradient-to-r from-[#ec4899] to-pink-200 mt-2 mb-8"></div>
 
             <p className="mb-6 text-base leading-relaxed">
-              Shopz helps you build faster by transforming your business vision
-              into a fully functional, production-ready online store.
+              Traderz helps you build faster by transforming your business
+              vision into a fully functional, production-ready online store.
             </p>
 
             <p className="mb-6 text-base leading-relaxed">
@@ -76,8 +76,8 @@ const About = () => {
             </p>
 
             <p className="mb-8 text-base leading-relaxed">
-              From intuitive design systems to global payment automation, Shopz
-              empowers you to build beautifully and scale effortlessly.
+              From intuitive design systems to global payment automation,
+              Traderz empowers you to build beautifully and scale effortlessly.
             </p>
 
             {/* CTA Button */}

@@ -225,7 +225,7 @@ const Discover = () => {
             transition={{ delay: 0.1 }}
             className="text-lg text-gray-600"
           >
-            From your first sale to your first million, Shopz provides the
+            From your first sale to your first million, Traderz provides the
             powerful infrastructure you need to grow.
           </motion.p>
         </div>

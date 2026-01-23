@@ -9,7 +9,7 @@ const SECTIONS = [
     content: (
       <>
         <p className="mb-4">
-          Welcome to Shopz ("we," "our," or "us"). By accessing or using our
+          Welcome to Traderz ("we," "our," or "us"). By accessing or using our
           website, mobile application, and services (collectively, the
           "Services"), you agree to be bound by these Terms and Conditions
           ("Terms"). If you do not agree to these Terms, please do not use our
@@ -28,7 +28,7 @@ const SECTIONS = [
     content: (
       <>
         <p className="mb-4">
-          To access certain features of Shopz, you may be required to register
+          To access certain features of Traderz, you may be required to register
           for an account. You agree to provide accurate, current, and complete
           information during the registration process and to update such
           information to keep it accurate, current, and complete.
@@ -57,7 +57,7 @@ const SECTIONS = [
         </p>
         <p>
           At the end of each Billing Cycle, your Subscription will automatically
-          renew under the exact same conditions unless you cancel it or Shopz
+          renew under the exact same conditions unless you cancel it or Traderz
           cancels it.
         </p>
       </>
@@ -91,11 +91,11 @@ const SECTIONS = [
         <p>
           The Service and its original content (excluding Content provided by
           users), features, and functionality are and will remain the exclusive
-          property of Shopz and its licensors. The Service is protected by
+          property of Traderz and its licensors. The Service is protected by
           copyright, trademark, and other laws of both the Nigeria and foreign
           countries. Our trademarks and trade dress may not be used in
           connection with any product or service without the prior written
-          consent of Shopz.
+          consent of Traderz.
         </p>
       </>
     ),
@@ -120,7 +120,7 @@ const SECTIONS = [
     content: (
       <>
         <p>
-          In no event shall Shopz, nor its directors, employees, partners,
+          In no event shall Traderz, nor its directors, employees, partners,
           agents, suppliers, or affiliates, be liable for any indirect,
           incidental, special, consequential or punitive damages, including
           without limitation, loss of profits, data, use, goodwill, or other
@@ -249,10 +249,10 @@ const Terms = () => {
                 If you have any questions about these Terms, please contact us.
               </p>
               <a
-                href="mailto:legal@shopz.com"
+                href="mailto:legal@Traderz.com"
                 className="text-[#ec4899] font-bold hover:underline"
               >
-                legal@shopz.com
+                legal@Traderz.com
               </a>
             </div>
           </div>

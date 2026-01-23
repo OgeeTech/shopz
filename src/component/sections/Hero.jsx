@@ -121,7 +121,7 @@ const Hero = () => {
             <span className="block h-[1.2em] text-[#ec4899]">
               <Typewriter />
             </span>
-            With Shopz
+            With Traderz
           </motion.h1>
 
           <motion.p
@@ -133,7 +133,7 @@ const Hero = () => {
               leading-relaxed
             "
           >
-            Shopz helps small and large businesses build stunning, scalable
+            Traderz helps small and large businesses build stunning, scalable
             e-commerce websites from one powerful platform.
           </motion.p>
 
@@ -163,7 +163,7 @@ const Hero = () => {
         >
           <motion.img
             src="/img/hero.png"
-            alt="Shopz dashboard preview"
+            alt="Traderz dashboard preview"
             className="
               w-full
               mt-[10px]

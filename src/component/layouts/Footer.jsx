@@ -49,9 +49,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-pink-50 flex items-center justify-center text-[#ec4899]">
                 <CartIcon className="w-5 h-5" />
               </div>
-              <h3 className="text-2xl font-extrabold text-gray-900">
-                Shop<span className="text-[#ec4899]">z</span>
-              </h3>
+              <h3 className="text-2xl font-extrabold text-gray-600">Traderz</h3>
             </div>
 
             <p className="text-sm text-gray-500 max-w-xs mx-auto md:mx-0">
@@ -146,7 +144,7 @@ const Footer = () => {
 
         {/* ===== BOTTOM ===== */}
         <div className="mt-14 text-center text-xs text-gray-400">
-          © {new Date().getFullYear()} Shopz. All rights reserved.
+          © {new Date().getFullYear()} Traderz. All rights reserved.
         </div>
       </div>
     </footer>

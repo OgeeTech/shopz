@@ -51,7 +51,7 @@ const Preloader = () => {
           <div className="flex flex-col items-center gap-1">
             <CartIcon className="w-10 h-10 text-[#ec4899]" />
             <span className="text-2xl font-extrabold text-[#ec4899] tracking-tight">
-              Shopz
+              Traderz
             </span>
           </div>
         </motion.div>

@@ -44,7 +44,7 @@ const Login = () => {
         {/* Testimonial */}
         <div className="relative z-10 max-w-md mb-10">
           <blockquote className="text-2xl font-medium leading-relaxed mb-6">
-            "The analytics dashboard alone saved us 20 hours a week. Shopz is
+            "The analytics dashboard alone saved us 20 hours a week. Traderz is
             indispensable."
           </blockquote>
           <div className="flex items-center gap-4">

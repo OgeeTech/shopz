@@ -26,7 +26,7 @@ const PLANS = [
     popular: false,
     features: [
       "1 Online Store",
-      "Shopz Branding",
+      "Traderz Branding",
       "Standard Analytics",
       "50 Product Uploads",
       "Basic Support",
@@ -42,7 +42,7 @@ const PLANS = [
       "Everything in Starter",
       "Custom Domain (.com)",
       "Custom Logo & Branding",
-      "Remove Shopz Badge",
+      "Remove Traderz Badge",
       "Unlimited Products",
       "Priority Support",
     ],
