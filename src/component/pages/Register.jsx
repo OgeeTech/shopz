@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import BackButton from "../ui/BackButton";
 
 /* ================= ANIMATION ================= */
 const fadeInUp = {
@@ -38,6 +39,7 @@ const GoogleIcon = ({ className }) => (
 const Register = () => {
   return (
     <div className="min-h-screen grid lg:grid-cols-2 pt-28">
+      <BackButton />
       {/* LEFT: VISUAL */}
       <aside className="hidden lg:flex relative flex-col justify-end bg-gray-900 text-white p-12 overflow-hidden rounded-tr-3xl">
         <img

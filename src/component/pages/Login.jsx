@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import BackButton from "../ui/BackButton";
 
 /* ================= ICONS ================= */
 const GoogleIcon = ({ className }) => (
@@ -27,9 +28,8 @@ const GoogleIcon = ({ className }) => (
 /* ================= COMPONENT ================= */
 const Login = () => {
   return (
-    // Added 'pt-28' to clear the fixed navbar
     <div className="min-h-screen grid lg:grid-cols-2 pt-28">
-      {/* --- LEFT: VISUAL SIDE (Hidden on mobile) --- */}
+      <BackButton />
       <div className="hidden lg:relative lg:flex flex-col justify-end bg-gray-900 text-white p-12 overflow-hidden rounded-tr-3xl">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">

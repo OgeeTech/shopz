@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import BackButton from "../ui/BackButton";
 
 /* ================= DATA ================= */
 const SECTIONS = [
@@ -199,6 +200,7 @@ const Privacy = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-5xl font-extrabold text-gray-600 mb-4"
           >
+            <BackButton />
             Privacy Policy
           </motion.h1>
           <motion.p
