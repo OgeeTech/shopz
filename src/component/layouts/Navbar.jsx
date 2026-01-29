@@ -97,7 +97,7 @@ const Navbar = () => {
             {/* AUTH BUTTONS (Desktop) */}
 
             <a
-              to=""
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeXbclcWTJZYH2jCzW7yBECsOYGx9aW-HXTofRVOVRxD-Yyuw/viewform?usp=publish-editor"
               className="bg-[#5cac7d] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4b9469] transition"
             >
               Join Wait List
@@ -164,7 +164,7 @@ const Navbar = () => {
                 {/* FIXED: Mobile Sign In */}
 
                 <a
-                  href="/register"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeXbclcWTJZYH2jCzW7yBECsOYGx9aW-HXTofRVOVRxD-Yyuw/viewform?usp=publish-editor"
                   className="bg-[#5cac7d] text-white text-center py-3 rounded-full font-semibold hover:bg-[#4b9469] transition"
                   onClick={() => setMobileOpen(false)}
                 >

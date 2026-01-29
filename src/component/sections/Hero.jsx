@@ -167,7 +167,7 @@ const Hero = () => {
           >
             {/* Primary Button */}
             <Link
-              to="/register"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeXbclcWTJZYH2jCzW7yBECsOYGx9aW-HXTofRVOVRxD-Yyuw/viewform?usp=publish-editor"
               className="bg-[#4b9469] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-green-600/30 hover:bg-[#6bc091] hover:scale-105 active:scale-95 transition-all w-full sm:w-auto inline-block text-center"
             >
               Join Wait List

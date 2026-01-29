@@ -83,8 +83,8 @@ const About = () => {
             </p>
 
             {/* CTA Button */}
-            <Link
-              to="/contact"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeXbclcWTJZYH2jCzW7yBECsOYGx9aW-HXTofRVOVRxD-Yyuw/viewform?usp=publish-editor"
               className="group flex items-center w-max gap-3 bg-gradient-to-r from-[#5cac7d] to-[#3c7654] py-3.5 px-8 rounded-full text-white font-semibold shadow-lg shadow-green-500/30 hover:green-pink-500/50 hover:-translate-y-1 transition-all duration-300"
             >
               <span>Get Started</span>
@@ -101,7 +101,7 @@ const About = () => {
                   fill="#fff"
                 />
               </svg>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>
