@@ -75,53 +75,77 @@ const Typewriter = () => {
   }, [subIndex, reverse, index]);
 
   return (
-    <span className="inline-flex items-center">
+    <span className="inline-flex items-center" style={{ color: "#4b9469" }}>
       {WORDS[index].substring(0, subIndex)}
       <motion.span
         animate={{ opacity: blink ? 1 : 0 }}
-        className="ml-1 inline-block w-[3px] h-[0.9em] bg-[#ec4899]"
+        className="ml-1 inline-block w-[3px] h-[0.9em]"
+        style={{ backgroundColor: "#4b9469" }}
       />
     </span>
   );
 };
 
+/* ================= PULSE CARD COMPONENT ================= */
+const FounderBadge = () => (
+  <motion.div
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.5, type: "spring" }}
+    className="
+      inline-flex items-center gap-3 
+      bg-white border border-orange-100 
+      px-4 py-2 rounded-full shadow-md shadow-orange-500/5 mb-4
+      cursor-default hover:scale-105 transition-transform
+    "
+  >
+    <div className="relative flex h-3 w-3">
+      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+      <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+    </div>
+    <span className="text-sm font-bold text-gray-700">
+      Early birds get <span className="text-orange-500">Founder's Badge</span>{" "}
+      🏆
+    </span>
+  </motion.div>
+);
+
 /* ================= HERO ================= */
 const Hero = () => {
   return (
-    <section className="relative min-h-[100dvh] flex items-center bg-[#f5f0f0] overflow-hidden">
-      {/* Background Blobs (Optional - Uncomment to use) */}
-      {/* <div className="absolute -top-32 -right-32 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#ec4899]/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
-      <div className="absolute -bottom-40 -left-40 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-blue-100/40 rounded-full blur-[100px] md:blur-[140px] pointer-events-none" /> */}
-
+    // UPDATED: h-[100dvh] ensures it fits exactly in viewport height
+    <section className="relative h-[100dvh] flex items-center bg-[#f5f0f0] overflow-hidden">
       <motion.div
         className="
           container mx-auto 
           px-6 md:px-12 
-          pt-28 pb-12 md:pt-0 md:pb-0 
           grid md:grid-cols-2 
           items-center 
-          gap-12 md:gap-8 lg:gap-16
+          gap-8 lg:gap-16
           relative z-10
+          h-full
         "
         variants={containerVariants}
         initial="hidden"
         animate="show"
       >
         {/* LEFT TEXT */}
-        <motion.div className="space-y-6 text-center md:text-left order-1">
+        {/* UPDATED: Removed top margins, tightened spacing (space-y-5) */}
+        <motion.div className="space-y-5 text-center md:text-left order-1 flex flex-col items-center md:items-start justify-center h-full pt-16 md:pt-0">
+          <FounderBadge />
+
           <motion.h1
             variants={fadeUp}
             className="
-    font-extrabold text-gray-600 leading-[1.1]
-    text-5xl sm:text-7xl md:text-5xl lg:text-7xl
-  "
+              font-extrabold text-gray-600 leading-[1.05]
+              text-4xl sm:text-6xl md:text-5xl lg:text-7xl
+            "
           >
             Launch Your
-            {/* Typewriter text */}
-            <span className="block h-[1.2em] text-[#ec4899]">
+            <span className="block min-h-[1.2em] my-1 whitespace-nowrap text-[#4b9469]">
               <Typewriter />
             </span>
-            With Traderz
+            With Tradaz
           </motion.h1>
 
           <motion.p
@@ -133,24 +157,24 @@ const Hero = () => {
               leading-relaxed
             "
           >
-            Traderz helps small and large businesses build stunning, scalable
+            Tradaz helps small and large businesses build stunning, scalable
             e-commerce websites from one powerful platform.
           </motion.p>
 
           <motion.div
             variants={fadeUp}
-            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2"
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2 w-full md:w-auto"
           >
             {/* Primary Button */}
             <Link
               to="/register"
-              className="bg-[#ec4899] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-pink-500/30 hover:bg-[#db2777] hover:scale-105 active:scale-95 transition-all w-full sm:w-auto inline-block text-center"
+              className="bg-[#4b9469] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-green-600/30 hover:bg-[#6bc091] hover:scale-105 active:scale-95 transition-all w-full sm:w-auto inline-block text-center"
             >
-              Get Started Free
+              Join Wait List
             </Link>
 
             {/* Secondary Button */}
-            <button className="border border-gray-300 bg-white text-gray-700 font-bold px-8 py-4 rounded-full hover:bg-gray-50 hover:text-[#ec4899] hover:border-[#ec4899] active:scale-95 transition-all w-full sm:w-auto">
+            <button className="border border-gray-300 bg-white text-gray-700 font-bold px-8 py-4 rounded-full hover:bg-gray-50 hover:text-[#4b9469] hover:border-[#4b9469] active:scale-95 transition-all w-full sm:w-auto">
               View Demo
             </button>
           </motion.div>
@@ -159,19 +183,20 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <motion.div
           variants={imageVariants}
-          className="hidden md:flex justify-center md:justify-end order-2"
+          className="hidden md:flex justify-center md:justify-end order-2 h-full items-center"
         >
           <motion.img
-            src="/img/hero.png"
-            alt="Traderz dashboard preview"
+            src="/img/hero1.png"
+            alt="Tradaz dashboard preview"
+            // Keep image large, but use max-h to ensure it doesn't overflow viewport height
             className="
               w-full
-              mt-[10px]
-              max-w-[200px] sm:max-w-[400px] md:max-w-[520px] 
-              h-[100dvh] object-contain 
+              max-w-[800px] lg:max-w-[1100px] xl:max-w-[1500px]
+              max-h-[85vh]
+              object-contain
               drop-shadow-2xl
             "
-            animate={{ y: [0, -10, 0] }}
+            animate={{ y: [0, -14, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           />
         </motion.div>

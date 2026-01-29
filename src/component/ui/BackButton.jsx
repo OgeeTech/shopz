@@ -7,7 +7,7 @@ const BackButton = ({ className = "" }) => {
     <div className={`absolute top-28 left-6 md:left-12 z-20 ${className}`}>
       <Link
         to="/"
-        className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#ec4899] transition-colors"
+        className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[##5cac7d] transition-colors"
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"

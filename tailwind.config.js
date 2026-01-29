@@ -2,12 +2,11 @@
 export default {
     content: [
         "./index.html",
-        "/src/**/*.{js,ts,jsx,tsx}", // <--- Make sure this line matches your actual folder structure
+        "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {
-            // "colors" must be inside "extend" to add to existing colors,
-            // or inside "theme" to replace all default colors.
+
             colors: {
                 shopz: {
                     50: '#fdf2f8',
@@ -15,7 +14,19 @@ export default {
                     500: '#ec4899',
                     600: '#db2777',
                     900: '#831843',
-                }
+                },
+                tradaz: {
+                    50: '#ecf7f1',
+                    100: '#d6efe2',
+                    200: '#addfc6',
+                    300: '#84cfaa',
+                    400: '#6bc091',
+                    500: '#5cac7d', // ✅ base brand color
+                    600: '#4b9469',
+                    700: '#3c7654',
+                    800: '#2d5840',
+                    900: '#1e3a2b',
+                },
             },
             fontFamily: {
                 sans: ['"Plus Jakarta Sans"', 'sans-serif'],

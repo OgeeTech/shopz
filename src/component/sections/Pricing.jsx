@@ -26,7 +26,7 @@ const PLANS = [
     popular: false,
     features: [
       "1 Online Store",
-      "Traderz Branding",
+      "Tradaz Branding",
       "Standard Analytics",
       "50 Product Uploads",
       "Basic Support",
@@ -42,7 +42,7 @@ const PLANS = [
       "Everything in Starter",
       "Custom Domain (.com)",
       "Custom Logo & Branding",
-      "Remove Traderz Badge",
+      "Remove Tradaz Badge",
       "Unlimited Products",
       "Priority Support",
     ],
@@ -94,7 +94,7 @@ const Pricing = () => {
             >
               {/* Sliding Knob */}
               <motion.div
-                className="w-6 h-6 bg-[#ec4899] rounded-full shadow-md"
+                className="w-6 h-6 bg-[#4b9469] rounded-full shadow-md"
                 animate={{ x: isYearly ? 32 : 0 }}
                 transition={{ type: "spring", stiffness: 500, damping: 30 }}
               />
@@ -104,7 +104,7 @@ const Pricing = () => {
               className={`text-sm font-semibold ${isYearly ? "text-gray-900" : "text-gray-400"}`}
             >
               Yearly{" "}
-              <span className="text-[#ec4899] text-xs ml-1">(Save ~20%)</span>
+              <span className="text-[#4b9469] text-xs ml-1">(Save ~20%)</span>
             </span>
           </div>
         </div>
@@ -118,14 +118,14 @@ const Pricing = () => {
                 relative p-8 rounded-2xl border transition-all duration-300
                 ${
                   plan.popular
-                    ? "bg-white border-[#ec4899] shadow-xl scale-105 z-10"
+                    ? "bg-white border-[#4b9469] shadow-xl scale-105 z-10"
                     : "bg-white border-gray-100 shadow-sm hover:shadow-lg"
                 }
               `}
             >
               {/* Popular Badge */}
               {plan.popular && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#ec4899] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#4b9469] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
                   Most Popular
                 </div>
               )}
@@ -161,7 +161,7 @@ const Pricing = () => {
                   w-full py-3 rounded-xl font-bold transition-all mb-8
                   ${
                     plan.popular
-                      ? "bg-[#ec4899] text-white hover:bg-[#db2777] shadow-lg shadow-pink-500/30"
+                      ? "bg-[#4b9469] text-white hover:bg-[#6bc091] shadow-lg shadow-green-500/30"
                       : "bg-gray-100 text-gray-900 hover:bg-gray-200"
                   }
                 `}

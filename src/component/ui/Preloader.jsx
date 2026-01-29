@@ -26,7 +26,7 @@ const Preloader = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       // Full Pink Screen
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#ec4899]"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#5cac7d]"
     >
       <div className="relative flex items-center justify-center">
         {/* --- 1. Cyclic Spinner Ring (Outer) --- */}
@@ -49,9 +49,9 @@ const Preloader = () => {
         >
           {/* --- 3. The Logo (Pink) --- */}
           <div className="flex flex-col items-center gap-1">
-            <CartIcon className="w-10 h-10 text-[#ec4899]" />
-            <span className="text-2xl font-extrabold text-[#ec4899] tracking-tight">
-              Traderz
+            <CartIcon className="w-10 h-10 text-[#5cac7d]" />
+            <span className="text-2xl font-extrabold text-[#5cac7d] tracking-tight">
+              Tradaz
             </span>
           </div>
         </motion.div>

@@ -11,7 +11,7 @@ const SECTIONS = [
     content: (
       <>
         <p className="mb-4">
-          At Traderz ("we," "us," or "our"), we respect your privacy and are
+          At Tradaz ("we," "us," or "our"), we respect your privacy and are
           committed to protecting your personal data. This Privacy Policy will
           inform you as to how we look after your personal data when you visit
           our website (regardless of where you visit it from) and tell you about
@@ -282,10 +282,10 @@ const Privacy = () => {
                 correction or deletion, please contact our DPO directly.
               </p>
               <a
-                href="mailto:dpo@Traderz.com"
+                href="mailto:dpo@Tradaz.com"
                 className="text-[#ec4899] font-bold hover:underline"
               >
-                dpo@Traderz.com
+                dpo@Tradaz.com
               </a>
             </div>
           </div>

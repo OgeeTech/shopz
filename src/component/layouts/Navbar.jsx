@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 /* ================= LINKS ================= */
 export const NAV_LINKS = [
+  { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Terms & Conditions", href: "/terms" },
-  { name: "Privacy Policy", href: "/privacy" },
+
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -65,7 +65,7 @@ const Navbar = () => {
     : "bg-transparent";
 
   const hoverStyle =
-    "text-gray-600 hover:text-[#ec4899] transition-colors duration-200";
+    "text-gray-600 hover:text-[#5cac7d] transition-colors duration-200";
 
   return (
     <>
@@ -78,7 +78,7 @@ const Navbar = () => {
           >
             <CartIcon className="w-7 h-7" />
             <span className="text-2xl font-extrabold tracking-tight">
-              Traderz
+              Tradaz
             </span>
           </Link>
 
@@ -95,16 +95,13 @@ const Navbar = () => {
             ))}
 
             {/* AUTH BUTTONS (Desktop) */}
-            <Link to="/login" className={`text-sm font-semibold ${hoverStyle}`}>
-              Sign in
-            </Link>
 
-            <Link
-              to="/register"
-              className="bg-[#ec4899] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#db2777] transition"
+            <a
+              to=""
+              className="bg-[#5cac7d] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#4b9469] transition"
             >
-              Register
-            </Link>
+              Join Wait List
+            </a>
           </div>
 
           {/* MOBILE TOGGLE */}
@@ -142,11 +139,11 @@ const Navbar = () => {
                 {/* Mobile Drawer Logo */}
                 <div className="flex items-center gap-2 text-gray-600">
                   <CartIcon className="w-6 h-6" />
-                  <span className="text-xl font-bold">Traderz</span>
+                  <span className="text-xl font-bold">Tradaz</span>
                 </div>
 
                 <button onClick={() => setMobileOpen(false)}>
-                  <XIcon className="w-7 h-7 text-gray-500 hover:text-[#ec4899] transition-colors" />
+                  <XIcon className="w-7 h-7 text-gray-500 hover:text-[#4b9469] transition-colors" />
                 </button>
               </div>
 
@@ -155,7 +152,7 @@ const Navbar = () => {
                   <Link
                     key={link.name}
                     to={link.href}
-                    className="text-lg font-medium text-gray-600 hover:text-[#ec4899] transition-colors"
+                    className="text-lg font-medium text-gray-600 hover:text-[#4b9469] transition-colors"
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.name}
@@ -165,22 +162,14 @@ const Navbar = () => {
                 <hr className="my-4 border-gray-100" />
 
                 {/* FIXED: Mobile Sign In */}
-                <Link
-                  to="/login"
-                  className="text-lg font-semibold text-gray-600 hover:text-[#ec4899] transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  Sign in
-                </Link>
 
-                {/* FIXED: Mobile Register (Changed href to to) */}
-                <Link
-                  to="/register"
-                  className="bg-[#ec4899] text-white text-center py-3 rounded-full font-semibold hover:bg-[#db2777] transition"
+                <a
+                  href="/register"
+                  className="bg-[#5cac7d] text-white text-center py-3 rounded-full font-semibold hover:bg-[#4b9469] transition"
                   onClick={() => setMobileOpen(false)}
                 >
-                  Register
-                </Link>
+                  Join Wait List
+                </a>
               </div>
             </motion.div>
           </>

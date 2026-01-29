@@ -10,6 +10,9 @@ import Discover from "./component/sections/Discover";
 import Footer from "./component/layouts/Footer";
 import Preloader from "./component/ui/Preloader";
 
+// 1. Import the ScrollToTop helper
+import ScrollToTop from "./component/utils/ScrollToTop";
+
 // pages
 import About from "./component/pages/About";
 import Terms from "./component/pages/Terms";
@@ -17,8 +20,10 @@ import Privacy from "./component/pages/Privacy";
 import Contact from "./component/pages/Contact";
 import Register from "./component/pages/Register";
 import Login from "./component/pages/Login";
+import Showcase from "./component/sections/Showcase";
 
 const App = () => {
+  // FIXED: Changed to 'true' so the preloader shows on refresh
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,13 +33,14 @@ const App = () => {
 
   return (
     <>
-      {/* 1. Router must wrap the ENTIRE application */}
       <Router>
+        {/* 2. Add ScrollToTop here so it listens to route changes */}
+        <ScrollToTop />
+
         <AnimatePresence mode="wait">
           {loading && <Preloader key="preloader" />}
         </AnimatePresence>
 
-        {/* 2. Only show the site content after loading is finished */}
         {!loading && (
           <>
             <Navbar />
@@ -49,6 +55,7 @@ const App = () => {
                     <Features />
                     <Pricing />
                     <Discover />
+                    <Showcase />
                   </main>
                 }
               />

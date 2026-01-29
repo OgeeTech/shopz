@@ -95,7 +95,7 @@ const Contact = () => {
             {/* Info Cards */}
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-pink-200 transition-colors">
-                <div className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-[#ec4899] mb-4">
+                <div className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center text-[#5cac7d] mb-4">
                   <Icons.Mail className="w-5 h-5" />
                 </div>
                 <h3 className="font-bold text-gray-900">Chat to sales</h3>
@@ -103,10 +103,10 @@ const Contact = () => {
                   Speak to our friendly team.
                 </p>
                 <a
-                  href="mailto:sales@Traderz.com"
-                  className="text-[#ec4899] font-semibold hover:underline"
+                  href="mailto:sales@Tradaz.com"
+                  className="text-[#5cac7d] font-semibold hover:underline"
                 >
-                  sales@Traderz.com
+                  sales@Tradaz.com
                 </a>
               </div>
 
@@ -119,14 +119,14 @@ const Contact = () => {
                   We're here to help.
                 </p>
                 <a
-                  href="mailto:support@Traderz.com"
-                  className="text-[#ec4899] font-semibold hover:underline"
+                  href="mailto:support@Tradaz.com"
+                  className="text-[#5cac7d] font-semibold hover:underline"
                 >
-                  support@Traderz.com
+                  support@Tradaz.com
                 </a>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-pink-200 transition-colors">
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:border-green-200 transition-colors">
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-4">
                   <Icons.MapPin className="w-5 h-5" />
                 </div>
@@ -151,7 +151,7 @@ const Contact = () => {
                 </p>
                 <a
                   href="tel:+234000000000"
-                  className="text-[#ec4899] font-semibold hover:underline"
+                  className="text-[#5cac7d] font-semibold hover:underline"
                 >
                   +234 (0) 123 456 78
                 </a>
@@ -189,7 +189,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="John"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ec4899] focus:ring-1 focus:ring-[#ec4899] outline-none transition"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#5cac7d] focus:ring-1 focus:ring-[#5cac7d] outline-none transition"
                   />
                 </div>
                 <div>
@@ -199,7 +199,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Doe"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ec4899] focus:ring-1 focus:ring-[#ec4899] outline-none transition"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#5cac7d] focus:ring-1 focus:ring-[#5cac7d] outline-none transition"
                   />
                 </div>
               </div>
@@ -211,7 +211,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="john@company.com"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ec4899] focus:ring-1 focus:ring-[#ec4899] outline-none transition"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#5cac7d] focus:ring-1 focus:ring-[#5cac7d] outline-none transition"
                 />
               </div>
 
@@ -222,11 +222,11 @@ const Contact = () => {
                 <textarea
                   rows="5"
                   placeholder="Tell us how we can help..."
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#ec4899] focus:ring-1 focus:ring-[#ec4899] outline-none transition resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#5cac7d] focus:ring-1 focus:ring-[#5cac7d] outline-none transition resize-none"
                 ></textarea>
               </div>
 
-              <button className="w-full bg-[#ec4899] hover:bg-[#db2777] text-white font-bold py-4 rounded-xl shadow-lg shadow-pink-500/20 transition-all transform active:scale-[0.98]">
+              <button className="w-full bg-[#5cac7d] hover:bg-[#3c7654] text-white font-bold py-4 rounded-xl shadow-lg shadow-pink-500/20 transition-all transform active:scale-[0.98]">
                 Send Message
               </button>
             </form>

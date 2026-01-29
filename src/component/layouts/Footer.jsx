@@ -46,10 +46,10 @@ const Footer = () => {
           {/* BRAND */}
           <div className="space-y-4 text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="w-10 h-10 rounded-xl bg-pink-50 flex items-center justify-center text-[#ec4899]">
+              <div className="w-10 h-10 rounded-xl bg-pink-50 flex items-center justify-center text-[#5cac7d]">
                 <CartIcon className="w-5 h-5" />
               </div>
-              <h3 className="text-2xl font-extrabold text-gray-600">Traderz</h3>
+              <h3 className="text-2xl font-extrabold text-gray-600">Tradaz</h3>
             </div>
 
             <p className="text-sm text-gray-500 max-w-xs mx-auto md:mx-0">
@@ -70,7 +70,7 @@ const Footer = () => {
                     rounded-full
                     bg-gray-50
                     text-gray-400
-                    hover:bg-[#ec4899]
+                    hover:bg-[#5cac7d]
                     hover:text-white
                     transition
                     hover:scale-105
@@ -93,7 +93,7 @@ const Footer = () => {
               <Link
                 key={label}
                 to={link}
-                className="text-gray-500 hover:text-[#ec4899] transition font-medium"
+                className="text-gray-500 hover:text-[#5cac7d] transition font-medium"
               >
                 {label}
               </Link>
@@ -120,7 +120,7 @@ const Footer = () => {
                   bg-gray-50
                   border border-gray-200
                   focus:outline-none
-                  focus:ring-2 focus:ring-[#ec4899]
+                  focus:ring-2 focus:ring-[#5cac7d]
                 "
               />
               <button
@@ -129,8 +129,8 @@ const Footer = () => {
                   px-6 py-3
                   text-sm font-semibold
                   text-white
-                  bg-[#ec4899]
-                  hover:bg-[#db2777]
+                  bg-[#5cac7d]
+                  hover:bg-[#6bc091]
                   rounded-lg
                   transition
                   active:scale-95
@@ -144,7 +144,7 @@ const Footer = () => {
 
         {/* ===== BOTTOM ===== */}
         <div className="mt-14 text-center text-xs text-gray-400">
-          © {new Date().getFullYear()} Traderz. All rights reserved.
+          © {new Date().getFullYear()} Tradaz. All rights reserved.
         </div>
       </div>
     </footer>

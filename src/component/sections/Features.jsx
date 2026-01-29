@@ -197,7 +197,7 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-bold text-gray-600"
         >
-          Why Choose Traderz?
+          Why Choose Tradaz?
         </motion.h2>
 
         <motion.p
@@ -249,7 +249,7 @@ const Features = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="inline-flex items-center gap-1 mt-14 text-sm font-medium text-[#ec4899] hover:text-[#db2777] hover:underline transition-all"
+          className="inline-flex items-center gap-1 mt-14 text-sm font-medium text-[#5cac7d] hover:text-[#6bc091] hover:underline transition-all"
         >
           {showAll ? "Show less features ↑" : "See full feature list →"}
         </motion.button>

@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import BackButton from "../ui/BackButton";
 const About = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-white pt-28 pb-16 overflow-hidden">
+      <BackButton />
       <div className="container mx-auto px-4 md:px-12">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20">
           {/* --- LEFT: IMAGE SECTION --- */}
@@ -39,7 +41,7 @@ const About = () => {
                   alt="User"
                   className="size-10 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-30"
                 />
-                <div className="flex items-center justify-center text-xs font-bold text-white size-10 rounded-full border-[3px] border-white bg-[#ec4899] hover:-translate-y-1 transition z-40">
+                <div className="flex items-center justify-center text-xs font-bold text-white size-10 rounded-full border-[3px] border-white bg-[#5cac7d] hover:-translate-y-1 transition z-40">
                   50+
                 </div>
               </div>
@@ -62,11 +64,11 @@ const About = () => {
             </h1>
 
             {/* Pink Gradient Line */}
-            <div className="w-24 h-[4px] rounded-full bg-gradient-to-r from-[#ec4899] to-pink-200 mt-2 mb-8"></div>
+            <div className="w-24 h-[4px] rounded-full bg-gradient-to-r from-[#5cac7d] to-green-200 mt-2 mb-8"></div>
 
             <p className="mb-6 text-base leading-relaxed">
-              Traderz helps you build faster by transforming your business
-              vision into a fully functional, production-ready online store.
+              Tradaz helps you build faster by transforming your business vision
+              into a fully functional, production-ready online store.
             </p>
 
             <p className="mb-6 text-base leading-relaxed">
@@ -76,14 +78,14 @@ const About = () => {
             </p>
 
             <p className="mb-8 text-base leading-relaxed">
-              From intuitive design systems to global payment automation,
-              Traderz empowers you to build beautifully and scale effortlessly.
+              From intuitive design systems to global payment automation, Tradaz
+              empowers you to build beautifully and scale effortlessly.
             </p>
 
             {/* CTA Button */}
             <Link
               to="/contact"
-              className="group flex items-center w-max gap-3 bg-gradient-to-r from-[#ec4899] to-[#db2777] py-3.5 px-8 rounded-full text-white font-semibold shadow-lg shadow-pink-500/30 hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300"
+              className="group flex items-center w-max gap-3 bg-gradient-to-r from-[#5cac7d] to-[#3c7654] py-3.5 px-8 rounded-full text-white font-semibold shadow-lg shadow-green-500/30 hover:green-pink-500/50 hover:-translate-y-1 transition-all duration-300"
             >
               <span>Get Started</span>
               <svg

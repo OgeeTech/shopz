@@ -132,10 +132,10 @@ const ITEMS = [
     title: "Multi-Brand Command Center",
     desc: "Manage multiple unique storefronts from a single dashboard. Different themes, different brands, one login.",
     icon: Icons.MultiStore,
-    colSpan: "md:col-span-2", // Takes up 2 columns
+    colSpan: "md:col-span-2",
     bg: "bg-gray-900",
     text: "text-white",
-    iconColor: "text-[#ec4899]",
+    iconColor: "text-[#4b9469]", // UPDATED: Green accent
   },
   {
     title: "AI Smart Assistant",
@@ -171,7 +171,7 @@ const ITEMS = [
     colSpan: "md:col-span-1",
     bg: "bg-white border border-gray-100",
     text: "text-gray-900",
-    iconColor: "text-[#ec4899]",
+    iconColor: "text-[#4b9469]", // UPDATED: Green accent
   },
   {
     title: "Global Checkout",
@@ -195,8 +195,8 @@ const ITEMS = [
     title: "Deep Data Analytics",
     desc: "Visualize your growth with comprehensive dashboards monitoring traffic and conversions.",
     icon: Icons.Analytics,
-    colSpan: "md:col-span-2", // Takes up 2 columns
-    bg: "bg-[#ec4899]",
+    colSpan: "md:col-span-2",
+    bg: "bg-[#4b9469]", // UPDATED: Main Green Brand Color
     text: "text-white",
     iconColor: "text-white",
   },
@@ -216,7 +216,8 @@ const Discover = () => {
             className="text-3xl md:text-5xl font-extrabold text-gray-600 mb-6"
           >
             Scale Your Online Business <br />
-            <span className="text-[#ec4899] ">Without Limits</span>
+            {/* UPDATED: Green color */}
+            <span className="text-[#4b9469]">Without Limits</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -225,7 +226,7 @@ const Discover = () => {
             transition={{ delay: 0.1 }}
             className="text-lg text-gray-600"
           >
-            From your first sale to your first million, Traderz provides the
+            From your first sale to your first million, Tradaz provides the
             powerful infrastructure you need to grow.
           </motion.p>
         </div>
