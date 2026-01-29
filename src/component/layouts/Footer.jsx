@@ -83,22 +83,7 @@ const Footer = () => {
           </div>
 
           {/* LINKS */}
-          <nav className="flex flex-col items-center md:items-start gap-3 text-sm">
-            {[
-              ["About Us", "/about"],
-              ["Contact Us", "/contact"],
-              ["Privacy Policy", "/privacy"],
-              ["Terms & Conditions", "/terms"],
-            ].map(([label, link]) => (
-              <Link
-                key={label}
-                to={link}
-                className="text-gray-500 hover:text-[#5cac7d] transition font-medium"
-              >
-                {label}
-              </Link>
-            ))}
-          </nav>
+
           {/* NEWSLETTER */}
           <div className="space-y-4 text-center md:text-left">
             <h4 className="text-base font-semibold text-gray-900">

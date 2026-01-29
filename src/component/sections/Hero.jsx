@@ -93,19 +93,23 @@ const FounderBadge = () => (
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.5, type: "spring" }}
     className="
-      inline-flex items-center gap-3 
+      inline-flex items-start md:items-center gap-3 
       bg-white border border-orange-100 
-      px-4 py-2 rounded-full shadow-md shadow-orange-500/5 mb-4
+      px-5 py-3 rounded-2xl shadow-md shadow-orange-500/5 mb-6
       cursor-default hover:scale-105 transition-transform
+      max-w-xl text-left
     "
   >
-    <div className="relative flex h-3 w-3">
+    <div className="relative flex h-3 w-3 mt-1.5 md:mt-0 shrink-0">
       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
       <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
     </div>
-    <span className="text-sm font-bold text-gray-700">
-      Early birds get <span className="text-orange-500">Founder's Badge</span>{" "}
-      🏆
+    <span className="text-sm font-medium text-gray-700 leading-snug">
+      Early birds get{" "}
+      <span className="text-orange-500 font-bold">Founder Badge</span>, first
+      month sub for free and{" "}
+      <span className="text-orange-500 font-bold">50% off</span> from their next
+      three month subscription. 🏆
     </span>
   </motion.div>
 );
@@ -113,7 +117,6 @@ const FounderBadge = () => (
 /* ================= HERO ================= */
 const Hero = () => {
   return (
-    // UPDATED: h-[100dvh] ensures it fits exactly in viewport height
     <section className="relative h-[100dvh] flex items-center bg-[#f5f0f0] overflow-hidden">
       <motion.div
         className="
@@ -130,7 +133,6 @@ const Hero = () => {
         animate="show"
       >
         {/* LEFT TEXT */}
-        {/* UPDATED: Removed top margins, tightened spacing (space-y-5) */}
         <motion.div className="space-y-5 text-center md:text-left order-1 flex flex-col items-center md:items-start justify-center h-full pt-16 md:pt-0">
           <FounderBadge />
 
@@ -166,12 +168,14 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2 w-full md:w-auto"
           >
             {/* Primary Button */}
-            <Link
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeXbclcWTJZYH2jCzW7yBECsOYGx9aW-HXTofRVOVRxD-Yyuw/viewform?usp=publish-editor"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#4b9469] text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-green-600/30 hover:bg-[#6bc091] hover:scale-105 active:scale-95 transition-all w-full sm:w-auto inline-block text-center"
             >
               Join Wait List
-            </Link>
+            </a>
 
             {/* Secondary Button */}
             <button className="border border-gray-300 bg-white text-gray-700 font-bold px-8 py-4 rounded-full hover:bg-gray-50 hover:text-[#4b9469] hover:border-[#4b9469] active:scale-95 transition-all w-full sm:w-auto">
@@ -188,7 +192,6 @@ const Hero = () => {
           <motion.img
             src="/img/hero1.png"
             alt="Tradaz dashboard preview"
-            // Keep image large, but use max-h to ensure it doesn't overflow viewport height
             className="
               w-full
               max-w-[800px] lg:max-w-[1100px] xl:max-w-[1500px]
