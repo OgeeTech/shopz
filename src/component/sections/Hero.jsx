@@ -117,7 +117,8 @@ const FounderBadge = () => (
 /* ================= HERO ================= */
 const Hero = () => {
   return (
-    <section className="relative h-[100dvh] flex items-center bg-[#f5f0f0] overflow-hidden">
+    // <section className="relative h-[100dvh] flex items-center bg-[#f5f0f0] overflow-hidden">
+    <section className="relative min-h-[100dvh] flex items-center bg-[#f5f0f0] overflow-hidden pt-24">
       <motion.div
         className="
           container mx-auto 
